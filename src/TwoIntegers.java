@@ -1,32 +1,47 @@
 public class TwoIntegers 
 {
-	private int bear;
-	private int dear;
+	private int num;
+	private int num2;
 	
 	public TwoIntegers()
 	{
-		bear = 0;
-		dear = 0;
+		num = 0;
+		num2 = 0;
 	}
-	public TwoIntegers( int bear, int dear)
+	public TwoIntegers( int num, int num2)
 	{
-		this.bear = bear;
-		this.dear = dear;
+		this.num = num;
+		this.num2 = num2;
 	}
-	public int getBear()
+	public int getNum()
 	{
-		return bear;
+		return num;
 	}
-	public void setBear( int bear)
+	public void setNum( int num)
 	{
-		this.bear = bear;
+		this.num = num;
 	}
-	public int getDear()
+	public int getNum2()
 	{
-		return dear;
+		return num;
 	}
-	public void setDear( int dear)
+	public void setNum2( int num2)
 	{
-		this.dear = dear;
+		this.num2 = num2;
+	}
+	public String arithmetic()
+	{
+		int sum = num + num2;
+		int mult = num * num2;
+		int div = num / num2;
+		int quo = num % num2;
+		return num + " + " + num2 + " = " + sum
+		+ num + " * " + num2 + " = " + mult
+		+ num + " / " + num2 + " = " + div
+		+ num + " % " + num2 + " = " + quo;
+	}
+	public boolean larger()
+	{
+		
 	}
 }
