@@ -40,8 +40,27 @@ public class TwoIntegers
 		+ num + " / " + num2 + " = " + div
 		+ num + " % " + num2 + " = " + quo;
 	}
-	public boolean larger()
+	public int larger()
 	{
+		if(num > num2)
+		{
+			return num;			
+		}
+		else
+		{
+			return num2;
+		}
 		
+	}
+	public boolean isEven()
+	{
+		if((num + num2) % 2 == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
 	}
 }
