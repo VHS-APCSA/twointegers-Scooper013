@@ -33,12 +33,20 @@ public class TwoIntegers
 	{
 		int sum = num + num2;
 		int mult = num * num2;
-		int div = num / num2;
-		int quo = num % num2;
+		int div = 0;
+		if(num2 != 0)
+		{
+			div = num / num2;
+		}
+		int quo = 0;
+		if(num2 != 0)
+		{
+			quo = num % num2;
+		}
 		return num + " + " + num2 + " = " + sum
-		+ num + " * " + num2 + " = " + mult
-		+ num + " / " + num2 + " = " + div
-		+ num + " % " + num2 + " = " + quo;
+		+ "  ,  " + num + " * " + num2 + " = " + mult
+		+ "  ,  " + num + " / " + num2 + " = " + div
+		+ "  ,  " + num + " % " + num2 + " = " + quo;
 	}
 	public int larger()
 	{
@@ -63,4 +71,16 @@ public class TwoIntegers
 			return false;
 		}
 	}
+	public boolean multiple()
+	{
+		if(num2 % num == 0)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
+	
 }
